@@ -1,168 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WESLEY SANTOS > BOTCRAFT</title>
-
+    <title>WESLEY BOTCRAFT | Arquiteto de Experiências Digitais</title>
+    <meta name="description" content="Criação de interfaces e experiências digitais imersivas, intuitivas e inesquecíveis.">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div id="cursor-dot" class="cursor"></div>
-    <div id="cursor-outline" class="cursor"></div>
-
-    <div class="background-effects">
-        <div class="grid-animation"></div>
-        <div id="spotlight"></div>
-    </div>
-
+    <!-- Preloader -->
     <div id="preloader">
-        <div id="bios-text"></div>
-        <div id="skip-message">PRESSIONE QUALQUER TECLA PARA INICIAR</div>
+        <div class="loader-text">CARREGANDO SISTEMA...</div>
     </div>
 
-    <nav class="sidebar-nav">
-        <a href="#home" class="nav-item active" data-tooltip="CONEXÃO"><i class="fa-solid fa-power-off"></i></a>
-        <a href="#directives" class="nav-item" data-tooltip="DIRETIVAS"><i class="fa-solid fa-compass-drafting"></i></a>
-        <a href="#specs" class="nav-item" data-tooltip="ESPECIFICAÇÕES"><i class="fa-solid fa-microchip"></i></a>
-        <a href="#faqs" class="nav-item" data-tooltip="FAQ"><i class="fa-solid fa-question"></i></a>
-        <a href="#developer" class="nav-item" data-tooltip="OPERADOR"><i class="fa-solid fa-user-secret"></i></a>
-        <a href="#contact" class="nav-item" data-tooltip="CONTATO"><i class="fa-solid fa-link"></i></a>
-    </nav>
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
 
-    <main class="system-dashboard">
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">WESLEY BOTCRAFT</a>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#conexao" class="nav-link">CONEXÃO</a></li>
+                    <li><a href="#diretivas" class="nav-link">DIRETIVAS</a></li>
+                    <li><a href="#especificacoes" class="nav-link">ESPECIFICAÇÕES</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#operador" class="nav-link">OPERADOR</a></li>
+                    <li><a href="#contato" class="nav-link">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <header class="main-header">
-            <h1 class="glitch-text" data-text-scramble="WESLEY BOTCRAFT"></h1>
-            <p class="subtitle" data-text-scramble="ARQUITETO DE EXPERIÊNCIAS DIGITAIS"></p>
-        </header>
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="main-title"></h1>
+                <p class="subtitle">ARQUITETO DE EXPERIÊNCIAS DIGITAIS</p>
+            </div>
+        </section>
 
-        <section id="home" class="dashboard-module module-home active-module">
-            <h2><i class="fa-solid fa-power-off"></i> > CONEXÃO ESTABELECIDA <span class="status-indicator online"></span></h2>
-            <div class="module-content">
-                <p>Interface iniciada. Este ambiente é a demonstração viva da filosofia de design: criar experiências digitais que são imersivas, intuitivas e inesquecíveis. Explore os módulos para entender as tecnologias em ação.</p>
-                <div class="system-status-panel">
-                    <h3><i class="fa-solid fa-signal"></i> DIAGNÓSTICO DO SISTEMA</h3>
-                    <div class="status-grid">
-                        <div class="status-gauge">
-                            <div class="gauge-fill"></div>
-                            <span class="gauge-label">ENERGIA <br> 98%</span>
-                        </div>
-                        <div class="status-detail">
-                            <span class="detail-label">ESTADO DA REDE</span>
-                            <span class="detail-value online">ONLINE <i class="fa-solid fa-circle-check"></i></span>
-                        </div>
-                        <div class="status-detail">
-                            <span class="detail-label">LATÊNCIA</span>
-                            <span class="detail-value">25ms</span>
-                        </div>
-                        <div class="status-detail">
-                            <span class="detail-label">ÚLTIMO LOG</span>
-                            <span class="detail-value">2025-08-20, 19:30</span>
-                        </div>
+        <!-- Seção CONEXÃO -->
+        <section id="conexao" class="content-section">
+            <div class="container">
+                <h2 class="section-title">CONEXÃO</h2>
+                <p class="section-text">Interface iniciada. Este ambiente é a demonstração viva da filosofia de design: criar experiências digitais que são imersivas, intuitivas e inesquecíveis. Explore os módulos para entender as tecnologias em ação.</p>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">Energia</span>
+                        <span class="status-value green">98%</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Estado da Rede</span>
+                        <span class="status-value green">ONLINE</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Latência</span>
+                        <span class="status-value">25ms</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Último Log</span>
+                        <span class="status-value">2025-08-20, 19:30</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="directives" class="dashboard-module module-directives">
-            <h2><i class="fa-solid fa-compass-drafting"></i> > DIRETIVAS PRINCIPAIS</h2>
-            <div class="module-content grid-2">
-                <div class="directive-card">
-                    <h3>DESIGN CINEMÁTICO</h3>
-                    <p>Criação de interfaces que contam uma história. Utilizando efeitos de profundidade 3D, iluminação reativa e micro-interações para transformar a navegação em uma jornada visual.</p>
-                </div>
-                <div class="directive-card">
-                    <h3>SISTEMAS CONVERSACIONAIS</h3>
-                    <p>Desenvolvimento de chatbots programados para serem pontos de contato inteligentes e eficientes, oferecendo uma experiência de navegação orientada e personalizada.</p>
+        <!-- Seção DIRETIVAS -->
+        <section id="diretivas" class="content-section">
+            <div class="container">
+                <h2 class="section-title">DIRETIVAS</h2>
+                <div class="directives-grid">
+                    <div class="directive-card">
+                        <h3>DESIGN CINEMÁTICO</h3>
+                        <p>Criação de interfaces que contam uma história. Utilizando efeitos de profundidade 3D, iluminação reativa e micro-interações para transformar a navegação em uma jornada visual.</p>
+                    </div>
+                    <div class="directive-card">
+                        <h3>SISTEMAS CONVERSACIONAIS</h3>
+                        <p>Desenvolvimento de chatbots programados para serem pontos de contato inteligentes e eficientes, oferecendo uma experiência de navegação orientada e personalizada.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="specs" class="dashboard-module module-specs">
-            <h2><i class="fa-solid fa-microchip"></i> > ESPECIFICAÇÕES DO SISTEMA</h2>
-            <div class="module-content">
-                <p>A arquitetura desta interface foi projetada para ser leve e eficiente, utilizando tecnologias front-end puras:</p>
+        <!-- Seção ESPECIFICAÇÕES -->
+        <section id="especificacoes" class="content-section">
+            <div class="container">
+                <h2 class="section-title">ESPECIFICAÇÕES</h2>
+                <p class="section-text">A arquitetura desta interface foi projetada para ser leve e eficiente, utilizando tecnologias front-end puras:</p>
                 <div class="tech-grid">
-                    <div class="tech-item"><span>HTML5</span>Estrutura semântica e modular</div>
-                    <div class="tech-item"><span>CSS3</span>Layout responsivo com Grid & Flexbox</div>
-                    <div class="tech-item"><span>VANILLA JS</span>Lógica de interatividade (preloader, cursor, chatbot)</div>
+                    <div class="tech-item">HTML5</div>
+                    <div class="tech-item">CSS3</div>
+                    <div class="tech-item">VANILLA JS</div>
                 </div>
-                <p class="note">> Implementação nativa para alta performance e controle total sobre o código.</p>
+                <p class="tech-note"><strong>Nota:</strong> Implementação nativa para alta performance e controle total sobre o código.</p>
             </div>
         </section>
-        
-        <section id="faqs" class="dashboard-module module-faqs">
-            <h2><i class="fa-solid fa-question"></i> > TERMINAL FAQ</h2>
-            <div class="module-content">
-                <p>Selecione uma categoria de informação abaixo para visualizar os dados.</p>
-                <div class="faq-grid">
-                    <div class="faq-widget" data-faq-id="sobre">
-                        <i class="fa-solid fa-building"></i>
-                        <span>Sobre a Empresa e Serviços</span>
+
+        <!-- Seção FAQ -->
+        <section id="faq" class="content-section">
+            <div class="container">
+                <h2 class="section-title">FAQ</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Sobre a Empresa</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Wesley Botcraft é a sua solução para websites inteligentes e simples. Nossa missão é transformar a experiência online de pequenas empresas e autônomos com a fusão de design intuitivo e funcionalidade conversacional. Oferecemos serviços de criação de interfaces interativas e implementação de sistemas conversacionais programados.</p>
+                        </div>
                     </div>
-                    <div class="faq-widget" data-faq-id="info">
-                        <i class="fa-solid fa-circle-info"></i>
-                        <span>Informações e Benefícios</span>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Informações & Benefícios</span>
+                             <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Aqui estão algumas informações úteis e curiosidades:</p>
+                            <strong>Curiosidades do mundo de interfaces com chatbot:</strong>
+                            <ol>
+                                <li>A maioria dos usuários prefere interagir com um chatbot que tenha uma persona clara.</li>
+                                <li>Chatbots podem aumentar as taxas de conversão em até 40%.</li>
+                                <li>A primeira 'chatbot' foi o ELIZA, criado em 1966.</li>
+                            </ol>
+                            <strong>Benefícios de uma interface com chatbot programado:</strong>
+                            <ol>
+                                <li>Atendimento 24/7 sem a necessidade de um humano.</li>
+                                <li>Qualificação de leads de forma automatizada.</li>
+                                <li>Redução de custos e aumento da eficiência operacional.</li>
+                            </ol>
+                             <strong>Hospedagem:</strong>
+                            <p>Ofereço a opção de hospedagem gratuita com o GitHub Pages para projetos simples, ou a opção de hospedagem paga com domínio próprio para um visual mais profissional e completo.</p>
+                        </div>
                     </div>
-                    <div class="faq-widget" data-faq-id="desenvolvedor">
-                        <i class="fa-solid fa-user-secret"></i>
-                        <span>Sobre o Desenvolvedor</span>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Sobre o Desenvolvedor</span>
+                             <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O criador e arquiteto desta interface é Wesley Santos. Ele se dedica à criação de interfaces digitais minimalistas e funcionais, focadas na experiência do usuário. Seu trabalho visa ajudar pequenas empresas e profissionais autônomos a se destacarem no mercado digital através de soluções de front-end personalizadas e intuitivas.</p>
+                        </div>
                     </div>
-                    <div class="faq-widget" data-faq-id="contato">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Contato</span>
-                    </div>
-                </div>
-                
-                <div id="faq-display">
-                    <div class="display-header">
-                        <i class="fa-solid fa-terminal"></i>
-                        <span>_informacoes_do_sistema.log</span>
-                    </div>
-                    <div id="faq-content">
-                        <p>Aguardando sua seleção. Clique em um dos widgets acima para carregar o conteúdo.</p>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Contato</span>
+                             <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Pronto para construir o futuro do seu projeto? A comunicação está a um clique de distância.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="developer" class="dashboard-module module-developer">
-            <h2><i class="fa-solid fa-user-secret"></i> > DESENVOLVEDOR</h2>
-            <div class="module-content">
-                <img src="assets/img/wesley.jpg" alt="Foto de Wesley Santos" class="profile-photo">
-                <div class="developer-info">
-                    <p class="name" data-text-scramble="// WESLEY SANTOS //"></p>
-                    <p class="bio">Sou Wesley, 26 anos, de Sorocaba. Crio interfaces simples e funcionais, com chatbots programados, totalmente front-end, focando em design limpo e experiência intuitiva.</p>
+        <!-- Seção OPERADOR -->
+        <section id="operador" class="content-section">
+            <div class="container operator-container">
+                <img src="assets/img/wesley.jpg" alt="Foto de Wesley Santos" class="operator-img">
+                <div class="operator-info">
+                    <h2 class="section-title">OPERADOR</h2>
+                    <h3>WESLEY SANTOS</h3>
+                    <p>Sou Wesley, 26 anos, de Sorocaba. Crio interfaces simples e funcionais, com chatbots programados, totalmente front-end, focando em design limpo e experiência intuitiva.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="dashboard-module module-contact">
-            <h2><i class="fa-solid fa-link"></i> > INICIAR PROTOCOLO DE CONTATO</h2>
-            <div class="module-content">
-                <p>Pronto para construir o futuro do seu projeto? A comunicação está a um clique de distância.</p>
-                <div class="social-links">
-                    <a href="https://wa.me/5515997920703" target="_blank"><i class="fab fa-whatsapp"></i><span>WHATSAPP</span></a>
-                    <a href="https://www.instagram.com/siigmachat" target="_blank"><i class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
-                    <a href="mailto:wmktgeo@gmail.com"><i class="fa-solid fa-envelope"></i><span>E-MAIL</span></a>
+        <!-- Seção CONTATO -->
+        <section id="contato" class="content-section">
+            <div class="container">
+                <h2 class="section-title">CONTATO</h2>
+                <p class="section-text">Pronto para construir o futuro do seu projeto? A comunicação está a um clique de distância.</p>
+                <div class="contact-channels">
+                    <a href="https://wa.me/SEUNUMERO" target="_blank" class="contact-button">WhatsApp</a>
+                    <a href="https://instagram.com/SEUUSUARIO" target="_blank" class="contact-button">Instagram</a>
+                    <a href="mailto:SEUEMAIL@email.com" class="contact-button">E-mail</a>
                 </div>
             </div>
         </section>
-
-        <footer class="main-footer">
-            <p class="typing-effect">SESSÃO FINALIZADA. SISTEMA EM ATIVIDADE.</p>
-            <p class="copyright-info">COPYRIGHT © 2025 WESLEY BOTCRAFT. TODOS OS DIREITOS RESERVADOS.</p>
-        </footer>
-        
     </main>
-    
-    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">SESSÃO FINALIZADA. SISTEMA EM ATIVIDADE.</p>
+            <p class="copyright">COPYRIGHT © 2025 WESLEY BOTCRAFT. TODOS OS DIREITOS RESERVADOS.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
