@@ -1,0 +1,12 @@
+# Ignora pastas de ambientes virtuais
+venv/
+
+# Ignora arquivos de cache e build do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignora a pasta de executáveis gerados
+/dist/
+/build/
+*.spec
