@@ -17,3 +17,6 @@ O programa demonstra a aplicação de programação e automação para resolver 
 ## Como Usar
 
 Para um guia completo sobre como preparar o ambiente, executar o programa e personalizar as funcionalidades, consulte o **[Manual de Uso Completo](./docs/manual_de_uso.md)**.
+=======
+# CrewAI_IndustriaAutomotiva
+>>>>>>> f603ae14c48e46feedb7d34821bc2659ad3238f3
